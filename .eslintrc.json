@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "eslint:recommended"],
+  "rules": {
+    "no-unused-vars": "off", // Disable the rule for unused variables
+    "react/react-in-jsx-scope": "off" // Disable the React import check (in case you're using React 17 JSX Transform)
+  }
 }
